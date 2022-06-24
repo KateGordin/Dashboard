@@ -1,0 +1,115 @@
+@import "../styles/variables";
+
+.project {
+  height: 70px;
+  margin-bottom: 8px;
+  background-color: white;
+  border-radius: 8px;
+  border: 2px solid black;
+  border-left: 10.5px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 20px rgb(120 120 120 / 15%);
+
+  &--green {
+    border-left-color: $green;
+  }
+
+  &--blue {
+    border-left-color: $blue;
+  }
+
+  &--purple {
+    border-left-color: $purple;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: #efeded;
+  }
+}
+
+// title of project (category and name)
+.project-title {
+  min-width: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  &__category {
+    padding: 8px 12px;
+    margin-left: 15.88px;
+    color: darkgreen;
+    border-radius: 50%;
+    text-align: center;
+    opacity: 0.5;
+    margin-right: 36px;
+
+    &--green {
+      background-color: $green;
+    }
+
+    &--blue {
+      background-color: $blue;
+    }
+
+    &--purple {
+      background-color: $purple;
+    }
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #223273;
+  }
+}
+
+// content inside project (users, dashboards, button "Delete")
+.project-content {
+  width: 530px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  &__users {
+    font-size: 14px;
+    line-height: 22px;
+
+    @media screen and (max-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &__dashboard {
+    background-color: #ccf5e3;
+    color: #00cc74;
+    text-align: center;
+    border-radius: 4px;
+    padding: 4px 16px;
+    border: solid #00cc74 1px;
+
+    @media screen and (max-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  & > &__button {
+    color: #d15;
+    font-size: 14px;
+    line-height: 22px;
+    margin-right: 24px;
+    text-transform: none;
+
+    @media screen and (max-width: $tablet-width) {
+      display: none;
+    }
+
+    &:hover {
+      cursor: pointer;
+      color: black;
+    }
+  }
+}

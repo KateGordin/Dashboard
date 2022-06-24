@@ -1,3 +1,22 @@
+In this Dashboard, I implemented User Stories:
+1. As a user, I want to be able to view my 4 projects with details in an App
+2. As a user, I want to be able to delete projects
+3. As a user, I want to be able to view my projects on a mobile device
+4. As a user, I want to search my projects by name
+5. As a user, I want to see the category level visual for each project
+6. As a user, I want to be able to confirm when deleting a project from desktop
+
+Here are some facts about the project:
+- I've installed eslint and stylelint for my application to keep code cleaner
+- For styling, I used SCSS with CSS modules and BEM methodology for organizing styles
+- Created the file for variables and colors
+- Used MUI for modal (pop-up window)
+- Created a reusable component "project"
+- Added mobile version
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

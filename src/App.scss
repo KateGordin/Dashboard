@@ -1,0 +1,162 @@
+@import "styles/variables";
+
+.app {
+  background-color: #e5e5e5;
+  max-width: 1440px;
+  height: 100%;
+  margin: auto;
+}
+
+.projects {
+  max-width: 1200px;
+  margin: 300px auto;
+  padding: 0 24px;
+
+  &--greeting {
+    display: none;
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 38px;
+    color: #223273;
+
+    @media screen and (max-width: $tablet-width) {
+      display: block;
+    }
+  }
+
+  &--hint {
+    display: none;
+    color: #223273;
+    font-size: 14px;
+    line-height: 20px;
+    margin-right: 24px;
+    margin-bottom: 12px;
+
+    @media screen and (max-width: $tablet-width) {
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: $tablet-width) {
+    margin: 40px auto;
+  }
+}
+
+.search {
+  background-color: white;
+  height: 40px;
+  width: 222px;
+  border-radius: 8px;
+  border: 1px #c4c4c4 solid;
+  display: flex;
+  margin-left: auto;
+  margin-bottom: 22px;
+  align-items: center;
+
+  &--desktop {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+  }
+
+  &--tablet {
+    display: none;
+  }
+
+  @media screen and (max-width: $tablet-width) {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    flex-direction: row-reverse;
+    border-radius: 0;
+    width: 100%;
+
+    &--desktop {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: none;
+      background: transparent;
+      font-size: 14px;
+      line-height: 22px;
+      font-weight: 400;
+    }
+  }
+}
+
+.navbar {
+  height: 62px;
+  border-bottom: 1px solid #c4c4c4;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  & > &__menu {
+    display: none;
+    margin-left: 24px;
+
+    @media screen and (max-width: $tablet-width) {
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: $tablet-width) {
+    justify-content: space-between;
+    border-bottom: none;
+    height: 38px;
+    padding-top: 22px;
+  }
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 136px;
+  align-items: center;
+
+  &__name {
+    margin-left: 32px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #223273;
+
+    @media screen and (max-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &__avatar {
+    width: 24px;
+    height: 33px;
+    margin-left: 16px;
+  }
+
+  @media screen and (max-width: $tablet-width) {
+    margin-right: 24px;
+  }
+}
+
+// red circle for notifications on the bell
+.redcircle {
+  height: 8px;
+  width: 8px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  margin-left: 12px;
+  margin-top: 4px;
+}
+
+@media screen and (max-width: $desktop-width) {
+  .app {
+    &__projects {
+      width: 100%;
+    }
+  }
+}
