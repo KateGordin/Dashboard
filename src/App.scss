@@ -38,6 +38,19 @@
     }
   }
 
+  &--title {
+    display: none;
+    margin-bottom: 9px;
+    color: #223273;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+
+    @media screen and (max-width: $desktop-width) {
+      display: block;
+    }
+  }
+
   @media screen and (max-width: $tablet-width) {
     margin: 40px auto;
   }
@@ -59,10 +72,18 @@
     height: 100%;
     border: none;
     border-radius: 8px;
+
+    &:focus {
+      outline: none;
+    }
   }
 
   &--tablet {
     display: none;
+
+    &:focus {
+      outline: none;
+    }
   }
 
   @media screen and (max-width: $tablet-width) {
@@ -72,6 +93,7 @@
     flex-direction: row-reverse;
     border-radius: 0;
     width: 100%;
+    margin-bottom: 51px;
 
     &--desktop {
       display: none;

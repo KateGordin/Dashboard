@@ -70,7 +70,7 @@ function App() {
           <input className="search--desktop" onChange={e => onSearch(e.target.value)} placeholder="Search a project..."></input>
           <input className="search--tablet" onChange={e => onSearch(e.target.value)} placeholder="Search"></input>
         </div>
-
+        <div className="projects--title">My Projects:</div>
         {searchedProjects.map((project) => (
           <Project
             key={project.id}
