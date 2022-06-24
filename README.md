@@ -14,8 +14,7 @@ Here are some facts about the project:
 - Created a reusable component "project"
 - Added mobile version
 
-
-
+Live demo: https://dashboard-projects.netlify.app/
 
 # Getting Started with Create React App
 
