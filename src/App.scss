@@ -9,7 +9,7 @@
 
 .projects {
   max-width: 1200px;
-  margin: 300px auto;
+  margin: auto;
   padding: 0 24px;
 
   &--greeting {
@@ -118,6 +118,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin-bottom: 136px;
 
   & > &__menu {
     display: none;
